@@ -33,7 +33,7 @@ log = "0.4"
 pin-project = "0.4"
 time = "0.1"
 tower-service = "0.3"
-tokio = { version = "0.2", features = ["sync"] }
+tokio = { git = "https://github.com/qrayven/tokio", branch = "custom-cipherlist", features = ["sync"] }
 want = "0.3"
 
 # Optional
@@ -49,8 +49,8 @@ spmc = "0.3"
 serde = "1.0"
 serde_derive = "1.0"
 serde_json = "1.0"
-tokio = { version = "0.2.2", features = ["fs", "macros", "io-std", "rt-util", "sync", "time", "test-util"] }
-tokio-test = "0.2"
+tokio = {git = "https://github.com/qrayven/tokio", branch = "custom-cipherlist", features = ["fs", "macros", "io-std", "rt-util", "sync", "time", "test-util"] }
+tokio-test = {git = "https://github.com/qrayven/tokio", branch = "custom-cipherlist"}
 tower-util = "0.3"
 url = "1.0"
 
